@@ -1,6 +1,7 @@
 'use client'
 
-import './globalStyels/globals.css'
+import '../app/globalStyels/global.css'
+import '../app/globalStyels/normalize.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import { Layout } from '@/components/layouts/Layout'
 import { Provider } from 'react-redux'
