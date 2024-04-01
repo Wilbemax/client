@@ -1,18 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 
-
-// const initialState: AllowedLangs = {
-//   lang: object  
-// }
+const initialState = AllowedLangs.RU
 
 export const langSlise = createSlice({
   name: 'lang',
   initialState,
   reducers: {
-    setLang: (state, action: PayloadAction<AllowedLangs>) => {
-      state.lang = action.payload
-    },
+    setLang: (state, action: PayloadAction<AllowedLangs>) => action.payload,
   },
 })
 
