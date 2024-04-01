@@ -1,3 +1,5 @@
+// 'use client'
+import { AllowedLangs } from '@/constants/lang'
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 
