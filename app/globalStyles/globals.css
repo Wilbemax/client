@@ -36,11 +36,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .btn-reset {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  background-color: transparent;
+  background: none;
+  color: inherit;
   border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .slick-slide {
@@ -280,7 +283,8 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: Rostelecom Basis;
   font-style: normal;
   font-weight: 500;
-  src: url('../../public/fonts/Rostelecom/RostelecomBasis-Medium.woff') format('woff');
+  src: url('../../public/fonts/Rostelecom/RostelecomBasis-Medium.woff')
+    format('woff');
 }
 
 @font-face {
@@ -288,7 +292,8 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: Rostelecom Basis;
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/Rostelecom/RostelecomBasis-Regular.woff') format('woff');
+  src: url('../../public/fonts/Rostelecom/RostelecomBasis-Regular.woff')
+    format('woff');
 }
 
 .overflow-hidden {

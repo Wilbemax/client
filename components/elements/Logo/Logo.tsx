@@ -1,10 +1,9 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import logo from '@/public/img/Rostelecom.svg'
 
 export const Logo = () => (
-    <Link className='logo' href='/'>
-        {/* <img className='logo__img' src="/img/logo.svg" alt="WBMstore" /> */}
-        <p className='logo__img' style={{ fontSize: 32 }}>
-            WBMstore
-        </p>
-    </Link>
+  <Link className='logo' href='/'>
+    <Image src={logo} className='logo__img' alt='WBMstore' />
+  </Link>
 )

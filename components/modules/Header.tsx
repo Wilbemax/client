@@ -4,21 +4,35 @@ import { useLang } from '@/hooks/useLang'
 import { Logo } from '../elements/Logo/Logo'
 
 import Link from 'next/link'
+import Menu from './Menu'
+import { useModals } from '@/hooks/useModals'
+import { addOverflowHIddenFromBody } from '@/utils/common'
 
 export default function Header() {
   const { lang, translation } = useLang()
+  const { setMenu } = useModals()
+
+  const handleOpenMenu = () => {
+    addOverflowHIddenFromBody()
+    setMenu()
+  }
+
   return (
     <header className='header'>
-      <div className='continer header__container'>
-        <button className='btn-reset header__burger header__links__item__btn'>
+      <div className='container header__container'>
+        <button
+          className='btn-reset header__burger header__links__item__btn'
+          onClick={handleOpenMenu}
+        >
           {translation[lang].header.menu_btn}
         </button>
+        <Menu />
         <div className='header__logo'>
           <Logo />
         </div>
-        <ul className='header__links'>
+        <ul className='list-reset header__links'>
           <li className='header__links__item'>
-            <button className='header__links__item__btn header__links__item__btn--search' />
+            <button className='btn-reset header__links__item__btn header__links__item__btn--search' />
           </li>
           <li className='header__links__item'>
             <Link

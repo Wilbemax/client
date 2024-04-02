@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import langRedusers from '../features/language/language'
+import modalsRedusers from '@/features/modals/modals'
 
 export const store = configureStore({
   reducer: {
     langs: langRedusers,
+    modals: modalsRedusers,
   },
 })
 
