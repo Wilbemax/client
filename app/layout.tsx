@@ -8,7 +8,6 @@ import './globalStyles/globals.css'
 import './globalStyles/header.css'
 import './globalStyles/menu.css'
 
-
 // import './globalStyles/mobile-navbar.css'
 // import './globalStyles/catalog-menu.css'
 // import './globalStyles/search-modal.css'
