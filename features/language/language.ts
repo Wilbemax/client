@@ -9,7 +9,8 @@ export const langSlise = createSlice({
   name: 'lang',
   initialState,
   reducers: {
-    setLang: (state, action: PayloadAction<AllowedLangs>) => action.payload,
+    setLang: (state, action: PayloadAction<AllowedLangs>) =>
+      (state = action.payload),
   },
 })
 

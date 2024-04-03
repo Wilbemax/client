@@ -8,7 +8,7 @@ export const modalsSlise = createSlice({
   name: 'modals',
   initialState,
   reducers: {
-    setModalMenu: (state, action) => {
+    setModalMenu: (state) => {
       state.modalMenu = !state.modalMenu
     },
   },

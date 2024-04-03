@@ -1,8 +1,5 @@
 'use client'
 
-// import '../app/globalStyels/norm.css' //импорты с норамльным названием не читаються
-// import '../app/globalStyels/all.css' //импорты с норамльным названием не читаються
-
 import './globalStyles/normalize.css'
 import './globalStyles/globals.css'
 import './globalStyles/header.css'
