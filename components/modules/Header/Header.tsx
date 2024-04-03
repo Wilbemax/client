@@ -1,7 +1,7 @@
 'use client'
 
 import { useLang } from '@/hooks/useLang'
-import { Logo } from '../elements/Logo/Logo'
+import { Logo } from '../../elements/Logo/Logo'
 
 import Link from 'next/link'
 import Menu from './Menu'
