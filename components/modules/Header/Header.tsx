@@ -6,7 +6,7 @@ import { Logo } from '../../elements/Logo/Logo'
 import Link from 'next/link'
 import Menu from './Menu'
 import { useModals } from '@/hooks/useModals'
-import { addOverflowHIddenFromBody } from '@/utils/common'
+import { addOverflowHIddenFromBody } from '@/lib/utils/common'
 
 export default function Header() {
   const { lang, translation } = useLang()
