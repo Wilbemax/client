@@ -6,14 +6,14 @@ import { Logo } from '../../elements/Logo/Logo'
 import Link from 'next/link'
 import Menu from './Menu'
 import { useModals } from '@/hooks/useModals'
-import { addOverflowHIddenFromBody } from '@/lib/utils/common'
+import { addOverflowHiddenToBody } from '@/lib/utils/common'
 
 export default function Header() {
   const { lang, translation } = useLang()
   const { setMenu } = useModals()
 
   const handleOpenMenu = () => {
-    addOverflowHIddenFromBody()
+    addOverflowHiddenToBody()
     setMenu(true)
   }
 

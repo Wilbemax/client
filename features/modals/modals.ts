@@ -13,7 +13,7 @@ export const modalsSlise = createSlice({
       state.modalMenu = action.payload
     },
     setCatalogMenu: (state, action) => {
-      state.modalMenu = action.payload
+      state.catalogMenu = action.payload
     },
   },
 })

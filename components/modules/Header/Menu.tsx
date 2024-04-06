@@ -55,7 +55,7 @@ export default function Menu() {
       window.location.reload()
     }
 
-    setMenu()
+    setMenu(true)
   }
 
   const clothLinks = [
@@ -141,7 +141,7 @@ export default function Menu() {
         <button
           onClick={() => {
             removeOverflowHIddenFromBody()
-            setMenu()
+            setMenu(false)
           }}
           className={`btn-reset nav-menu__close ${modalMenu ? 'open' : ''}`}
         />
