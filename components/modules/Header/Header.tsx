@@ -14,7 +14,7 @@ export default function Header() {
 
   const handleOpenMenu = () => {
     addOverflowHIddenFromBody()
-    setMenu()
+    setMenu(true)
   }
 
   return (
