@@ -82,7 +82,7 @@
     top: 11px;
     width: 74px;
     height: 2px;
-    background-image: url(/img/menu-line-tiny.svg);
+    background-image: url(../../public/img/logo-bg-small.png);
     background-repeat: no-repeat;
     background-position: center center;
   }

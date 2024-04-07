@@ -11,7 +11,6 @@ import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { CatalogMenuButton } from './CatalogMenuButton'
 import { CatalogMenuList } from './CatalogMenuList'
 import { Accardion } from '../Accardion/Accardion'
-import { title } from 'process'
 import Link from 'next/link'
 
 export const CatalogMenu = () => {

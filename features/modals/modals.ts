@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   modalMenu: false,
   catalogMenu: false,
+  searchModal: false,
 }
 
 export const modalsSlise = createSlice({
@@ -15,9 +16,13 @@ export const modalsSlise = createSlice({
     setCatalogMenu: (state, action) => {
       state.catalogMenu = action.payload
     },
+    setSearchModalWindow: (state, action) => {
+      state.searchModal = action.payload
+    },
   },
 })
 
-export const { setModalMenu, setCatalogMenu } = modalsSlise.actions
+export const { setModalMenu, setCatalogMenu, setSearchModalWindow } =
+  modalsSlise.actions
 
 export default modalsSlise.reducer

@@ -10,11 +10,16 @@ import { addOverflowHiddenToBody } from '@/lib/utils/common'
 
 export default function Header() {
   const { lang, translation } = useLang()
-  const { setMenu } = useModals()
+  const { setMenu, setSearch } = useModals()
 
   const handleOpenMenu = () => {
     addOverflowHiddenToBody()
     setMenu(true)
+  }
+
+  const handleOpenSearchModal = () => {
+    setSearch(true)
+    addOverflowHiddenToBody()
   }
 
   return (
@@ -32,7 +37,10 @@ export default function Header() {
         </div>
         <ul className='list-reset header__links'>
           <li className='header__links__item'>
-            <button className='btn-reset header__links__item__btn header__links__item__btn--search' />
+            <button
+              onClick={handleOpenSearchModal}
+              className='btn-reset header__links__item__btn header__links__item__btn--search'
+            />
           </li>
           <li className='header__links__item'>
             <Link

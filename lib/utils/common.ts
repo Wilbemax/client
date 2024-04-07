@@ -12,3 +12,4 @@ export const getWindowWidth = () => {
     typeof window !== 'undefined' ? window : { innerWidth: 0 }
   return { windowWidth }
 }
+
