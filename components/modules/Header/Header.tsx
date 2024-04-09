@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Menu from './Menu'
 import { useModals } from '@/hooks/useModals'
 import { addOverflowHiddenToBody } from '@/lib/utils/common'
+import CartPopup from './CartPopup/CartPopup'
 
 export default function Header() {
   const { lang, translation } = useLang()
@@ -55,10 +56,7 @@ export default function Header() {
             />
           </li>
           <li className='header__links__item'>
-            <Link
-              href='/cart'
-              className='header__links__item__btn header__links__item__btn--cart'
-            />
+            <CartPopup />
           </li>
           <li className='header__links__item'>
             <Link
