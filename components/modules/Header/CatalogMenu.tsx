@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import { useLang } from '@/hooks/useLang'
 import { useMenuAnimation } from '@/hooks/useMenuAnimation'
